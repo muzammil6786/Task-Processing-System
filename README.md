@@ -271,16 +271,6 @@ DELETE /tasks/:id
 
 ---
 
-### Health Check
-```
-GET /health
-
-200 → { status: "ok", services: { database, redis } }
-503 → service unavailable
-```
-
----
-
 ## Real-Time Updates (Socket.IO)
 
 ```javascript
@@ -321,3 +311,9 @@ socket.emit("unsubscribe:task", taskId);
 - Ownership enforced on every task query (`WHERE user_id = $userId`)
 
 ---
+
+## 📄 License
+
+Copyright (c) 2026 Muzammil Raza Khan.
+
+All rights reserved. This project and its source code may not be used, copied, modified, or distributed without explicit permission from the author.
